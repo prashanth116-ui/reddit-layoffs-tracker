@@ -1,0 +1,53 @@
+# Reddit Layoffs Tracker Configuration
+
+subreddits:
+  - layoffs
+  - jobs
+
+scraping:
+  posts_per_subreddit: 500
+  include_comments: true
+  comments_per_post: 50
+  sort_by: new  # new, hot, top, rising
+  time_filter: month  # hour, day, week, month, year, all
+
+storage:
+  data_dir: data
+  format: csv  # csv or json
+
+keywords:
+  # Keywords to flag/categorize posts
+  companies:
+    - amazon
+    - google
+    - meta
+    - microsoft
+    - apple
+    - netflix
+    - tesla
+    - salesforce
+    - cisco
+    - intel
+    - ibm
+    - oracle
+    - uber
+    - lyft
+    - spotify
+    - snap
+    - twitter
+    - x corp
+    - stripe
+    - coinbase
+    - robinhood
+
+  layoff_terms:
+    - laid off
+    - layoff
+    - layoffs
+    - rif
+    - reduction in force
+    - terminated
+    - let go
+    - severance
+    - restructuring
+    - downsizing
